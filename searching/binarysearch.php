@@ -12,13 +12,12 @@
 
 
 /**
- * @param $x
- * @param $list
+ * @param       $x
+ * @param array $list
  *
  * @return float|int
  */
-
-function binary_search($x, $list) {
+function binarySearch($x, array $list) {
     $left = 0;
     $right = count($list) - 1;
 
@@ -41,4 +40,4 @@ $find = 8;
 var_dump($arr);
 echo 'We look for number:'. $find .'<br>';
 echo '<b>Binary Search with iteration: </b><br>';
-echo '<br>' . binary_search($find,$arr);
+echo '<br>' . binarySearch($find,$arr);
