@@ -16,7 +16,8 @@
  * @param       $value
  * @param       $key
  */
-function binarySearch(array $arr,$value,$key){
+function binarySearch(array $arr, $value, $key)
+{
 
 
 }
