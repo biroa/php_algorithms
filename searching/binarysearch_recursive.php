@@ -10,24 +10,32 @@
  *
  */
 
+/**
+ * @param $x
+ * @param $list
+ * @param $left
+ * @param $right
+ *
+ * @return float|int
+ */
 function binarySearchRecursive($x, $list, $left, $right) {
     if ($left > $right) {
         return -1;
     }
 
-    $mid = ($left + $right)/2;
-
+    $mid = floor(($left + $right)/2);
+    echo $mid.' ';
     if ($list[$mid] == $x) {
         return $mid;
     } elseif ($list[$mid] > $x) {
-        return binary_search($x, $list, $left, $mid - 1);
+        return binarySearchRecursive($x, $list, $left, $mid - 1);
     } elseif ($list[$mid] < $x) {
-        return binary_search($x, $list, $mid + 1, $right);
+        return binarySearchRecursive($x, $list, $mid + 1, $right);
     }
 }
 
-$left = 10;
-$right = 20;
-$list = [10,11,12,13,14,15,16,17,18,19,20];
-$x = 17;
+$left = 0;
+$right = 11;
+$list = [0,1,2,3,4,5,6,7,8,9,10,11];
+$x = 7;
 echo binarySearchRecursive($x,$list,$left,$right);
