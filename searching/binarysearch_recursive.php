@@ -37,5 +37,5 @@ function binarySearchRecursive($x, $list, $left, $right) {
 $left = 0;
 $right = 11;
 $list = [0,1,2,3,4,5,6,7,8,9,10,11];
-$x = 7;
+$x = 4;
 echo binarySearchRecursive($x,$list,$left,$right);
