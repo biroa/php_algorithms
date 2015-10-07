@@ -13,12 +13,13 @@
  *
  * @return array
  */
-function selectionSort(array $arr) {
-    for ($i = 0; $i < count($arr); ++$i) {
+function selectionSort(array $arr)
+{
+    for ( $i = 0; $i < count($arr); ++$i ) {
         $min = null;
         $minKey = null;
-        for($j = $i; $j < count($arr); ++$j) {
-            if (null === $min || $arr[$j] < $min) {
+        for ( $j = $i; $j < count($arr); ++$j ) {
+            if ( null === $min || $arr[$j] < $min ) {
                 $minKey = $j;
                 $min = $arr[$j];
             }
@@ -26,10 +27,11 @@ function selectionSort(array $arr) {
         $arr[$minKey] = $arr[$i];
         $arr[$i] = $min;
     }
+
     return $arr;
 }
 
-$arr = [7, 3, 9, 6, 5, 1, 2, 0, 8, 4];
+$arr = [ 7, 3, 9, 6, 5, 1, 2, 0, 8, 4 ];
 echo 'Unsorted list:<br/>';
 var_dump($arr);
 $sortedArr = selectionSort($arr);
