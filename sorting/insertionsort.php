@@ -10,6 +10,8 @@
 
 /**
  * @param array $numbers
+ *
+ * @return array
  */
 function insertionSort(array $numbers)
 {
@@ -24,7 +26,13 @@ function insertionSort(array $numbers)
             $j = $j - 1;
         }
     }
+
+    return $numbers;
 }
 
-$numbers = [ 2, 3, 4, 5, 1, 8, 11, 0 ];
-insertionSort($numbers);
+$arr = [ 7, 3, 9, 6, 5, 1, 2, 0, 8, 4 ];
+echo 'Unsorted list:<br/>';
+var_dump($arr);
+echo '<b>Insertion Sorted List: </b><br>';
+var_dump(insertionSort($arr));
+echo '<br><b>' . $sorted;
