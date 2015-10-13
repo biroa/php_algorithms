@@ -2,6 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: biroa
+ * based on:
+ * http://blog.richardknop.com/2012/06/merge-sort-php-implementation/
  * Date: 10/13/2015
  * Time: 7:32 PM
  *
