@@ -5,7 +5,7 @@
  * based on:
  * Date: 10/14/2015
  * Time: 10:09 PM
- *
+ * info: http://www.codeproject.com/Tips/515367/Validate-credit-card-number-with-Mod-algorithm
  *
  */
 
