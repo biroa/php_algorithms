@@ -6,6 +6,7 @@
  * Date: 10/14/2015
  * Time: 10:09 PM
  *
+ *
  */
 
 /**
@@ -19,6 +20,8 @@ function is_valid_luhn($number) {
     }else{
         $number = (int)$number;
     }
+    //Todo:: I have to continue here...
+    return $number;
 
 }
 
