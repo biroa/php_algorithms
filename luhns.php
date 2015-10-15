@@ -10,6 +10,19 @@
  *
  */
 
+
+/**
+ * @param $item
+ * @param $key
+ */
+function doubleEverySecondDigit(&$item, $key)
+{
+    $item = (int)$item;
+    if ( (int)$key === 0 || (int)$key % 2 === 0 ) {
+        $item = (int)$item*2;
+    }
+}
+
 /**
  * @param $number
  *
@@ -28,22 +41,15 @@ function is_valid_luhn($number)
      * We have to double every second digit starting from the right side
      * So we reverse the array
      */
-    array_reverse($array);
-    while ( $i < count($array) ) {
-        $array[$i] = (int)$array[$i];
-        if ( $i % 2 == 0 || $i == 0 ) {
-            $array[$i] = ($array[$i] * 2);
-        }
-        $i++;
-    }
-
-
+    $array = array_reverse($array);
+    array_walk($array, 'doubleEverySecondDigit');
+    $array = array_reverse($array);
     var_dump($array);
 
     return true;
 
 }
 
-$number = 98456;
+$number = 984563;
 echo 'Original number:' . $number;
 echo is_valid_luhn($number);
