@@ -24,8 +24,14 @@ function is_valid_luhn($number)
     }
 
     $i = 0;
+    /**
+     * We have to double every second digit starting from the right side
+     * So we reverse the array
+     */
+    array_reverse($array);
     while ( $i < count($array) ) {
-        if ( $i % 2 != 0 || $i == 0 ) {
+        $array[$i] = (int)$array[$i];
+        if ( $i % 2 == 0 || $i == 0 ) {
             $array[$i] = ($array[$i] * 2);
         }
         $i++;
