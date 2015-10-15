@@ -18,11 +18,23 @@ function is_valid_luhn($number) {
     if(!is_numeric($number)){
         return 'it is not a numeric value!';
     }else{
-        $number = (int)$number;
+        $array = str_split((int)$number);
     }
-    //Todo:: I have to continue here...
-    return $number;
+
+    $i=0;
+    while($i<count($array)){
+        if($i%2!=0 || $i == 0){
+            $array[$i] = ($array[$i] *2);
+        }
+    }
+
+
+    var_dump($array);
+
+    return implode(',',$array);
 
 }
 
-echo is_valid_luhn(98456);
+$number = 98456;
+echo 'Original number:' . $number;
+echo is_valid_luhn($number);
