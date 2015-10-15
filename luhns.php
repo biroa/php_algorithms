@@ -5,7 +5,8 @@
  * based on:
  * Date: 10/14/2015
  * Time: 10:09 PM
- * info: http://www.codeproject.com/Tips/515367/Validate-credit-card-number-with-Mod-algorithm
+ * info:
+ * http://www.codeproject.com/Tips/515367/Validate-credit-card-number-with-Mod-algorithm
  *
  */
 
@@ -14,24 +15,26 @@
  *
  * @return string
  */
-function is_valid_luhn($number) {
-    if(!is_numeric($number)){
+function is_valid_luhn($number)
+{
+    if ( !is_numeric($number) ) {
         return 'it is not a numeric value!';
-    }else{
+    } else {
         $array = str_split((int)$number);
     }
 
-    $i=0;
-    while($i<count($array)){
-        if($i%2!=0 || $i == 0){
-            $array[$i] = ($array[$i] *2);
+    $i = 0;
+    while ( $i < count($array) ) {
+        if ( $i % 2 != 0 || $i == 0 ) {
+            $array[$i] = ($array[$i] * 2);
         }
+        $i++;
     }
 
 
     var_dump($array);
 
-    return implode(',',$array);
+    return true;
 
 }
 
