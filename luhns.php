@@ -11,6 +11,7 @@
  */
 
 
+
 /**
  * @param $item
  * @param $key
@@ -20,6 +21,10 @@ function doubleEverySecondDigit(&$item, $key)
     $item = (int)$item;
     if ( (int)$key === 0 || (int)$key % 2 === 0 ) {
         $item = (int)$item*2;
+        if(strlen($item)>1){
+            $digits = str_split($item);
+            $item = $digits[0] + $digits[1];
+        }
     }
 }
 
@@ -44,7 +49,6 @@ function is_valid_luhn($number)
     $array = array_reverse($array);
     array_walk($array, 'doubleEverySecondDigit');
     $array = array_reverse($array);
-    var_dump($array);
 
     return true;
 
