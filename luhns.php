@@ -40,8 +40,7 @@ function is_valid_luhn($number)
     } else {
         $array = str_split((int)$number);
     }
-
-    $i = 0;
+    
     /**
      * We have to double every second digit starting from the right side
      * So we reverse the array
