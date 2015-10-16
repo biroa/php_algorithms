@@ -10,8 +10,6 @@
  *
  */
 
-
-
 /**
  * @param $item
  * @param $key
@@ -35,12 +33,13 @@ function doubleEverySecondDigit(&$item, $key)
  */
 function is_valid_luhn($number)
 {
+
     if ( !is_numeric($number) ) {
         return 'it is not a numeric value!';
     } else {
         $array = str_split((int)$number);
     }
-    
+
     /**
      * We have to double every second digit starting from the right side
      * So we reverse the array
@@ -49,10 +48,16 @@ function is_valid_luhn($number)
     array_walk($array, 'doubleEverySecondDigit');
     $array = array_reverse($array);
     var_dump($array);
-    return true;
+    foreach($array as $val){
+        $sum = $sum + $val;
+    }
+
+    var_dump($sum);
+    $result = $sum % 10;
+    echo 'result of mod' + $result;
 
 }
 
-$number = 984563;
+$number = 4916046413271485;
 echo 'Original number:' . $number;
 echo is_valid_luhn($number);
