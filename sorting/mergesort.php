@@ -14,20 +14,22 @@
  *
  * @return array
  */
-function divide(array $arr) {
-    if (1 === count($arr)) {
+function divide(array $arr)
+{
+    if ( 1 === count($arr) ) {
         return $arr;
     }
-    $left = $right = [];
-    $middle = round(count($arr)/2);
-    for ($i = 0; $i < $middle; ++$i) {
+    $left = $right = [ ];
+    $middle = round(count($arr) / 2);
+    for ( $i = 0; $i < $middle; ++$i ) {
         $left[] = $arr[$i];
     }
-    for ($i = $middle; $i < count($arr); ++$i) {
+    for ( $i = $middle; $i < count($arr); ++$i ) {
         $right[] = $arr[$i];
     }
     $left = divide($left);
     $right = divide($right);
+
     return conquer($left, $right);
 }
 
@@ -37,28 +39,30 @@ function divide(array $arr) {
  *
  * @return array
  */
-function conquer(array $left, array $right) {
-    $result = [];
-    while (count($left) > 0 || count($right) > 0) {
-        if (count($left) > 0 && count($right) > 0) {
+function conquer(array $left, array $right)
+{
+    $result = [ ];
+    while ( count($left) > 0 || count($right) > 0 ) {
+        if ( count($left) > 0 && count($right) > 0 ) {
             $firstLeft = current($left);
             $firstRight = current($right);
-            if ($firstLeft <= $firstRight) {
+            if ( $firstLeft <= $firstRight ) {
                 $result[] = array_shift($left);
             } else {
                 $result[] = array_shift($right);
             }
-        } else if (count($left) > 0) {
+        } else if ( count($left) > 0 ) {
             $result[] = array_shift($left);
-        } else if (count($right) > 0) {
+        } else if ( count($right) > 0 ) {
             $result[] = array_shift($right);
         }
     }
+
     return $result;
 }
 
-$arr = [];
-for ($i = 0; $i < 100; ++$i) {
+$arr = [ ];
+for ( $i = 0; $i < 100; ++$i ) {
     $arr[] = $i;
 }
 shuffle($arr);
