@@ -8,6 +8,7 @@
 
 /**
  * @param $n
+ *
  * @return int
  */
 function fibonacciRecursive($n)
@@ -25,6 +26,7 @@ function fibonacciRecursive($n)
 
 /**
  * @param $n
+ *
  * @return int
  */
 function caller($number)

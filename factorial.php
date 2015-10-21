@@ -8,6 +8,7 @@
 
 /**
  * @param $number
+ *
  * @return int
  */
 function factorial($number)
