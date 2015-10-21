@@ -27,4 +27,5 @@ function fibonacci($n)
         $second = $third;
     }
 }
+
 fibonacci(10);
