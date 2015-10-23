@@ -3,6 +3,8 @@
 
 ## **_Searching algoritms_**
 	* Bubble Sort
+		- https://en.wikipedia.org/wiki/Bubble_sort
+		- https://www.youtube.com/watch?v=lyZQPjUT5B4
 	* Insertion Sort
 	* Merge Sort
 	* Selection Sort
