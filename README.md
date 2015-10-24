@@ -11,6 +11,10 @@
 		- https://www.youtube.com/watch?v=DFG-XuyPYUQ
 		- https://www.youtube.com/watch?v=ROalU379l3U
 	* Merge Sort
+		- https://en.wikipedia.org/wiki/Merge_sort
+		- https://www.youtube.com/watch?v=EeQ8pwjQxTM
+		- https://www.youtube.com/watch?v=XaqR3G_NVoo
+		- https://www.youtube.com/watch?v=GCae1WNvnZM
 	* Selection Sort
 	* Shell Sort
     
