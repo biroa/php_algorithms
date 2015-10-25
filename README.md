@@ -21,6 +21,8 @@
 ============================================
 ## **_Sorting Algorithms_**
 	* Binary Search
+		- https://en.wikipedia.org/wiki/Binary_search_algorithm
+		- https://www.youtube.com/watch?v=wNVCJj642n4
 	* Binary Search Recursively
 	* Linear Search
 
