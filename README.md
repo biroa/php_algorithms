@@ -25,6 +25,8 @@
 		- https://www.youtube.com/watch?v=wNVCJj642n4
 	* Binary Search Recursively
 	* Linear Search
+		- https://en.wikipedia.org/wiki/Linear_search
+		- https://www.youtube.com/watch?v=CX2CYIJLwfg
 
 ============================================
 ## **_Other_**
