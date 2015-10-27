@@ -35,3 +35,5 @@
 		- https://en.wikipedia.org/wiki/Fibonacci_number
 	* Fibonacci Recursively
 	* Luhns
+		- https://en.wikipedia.org/wiki/Luhn_algorithm
+		- https://www.youtube.com/watch?v=PNXXqzU4YnM
