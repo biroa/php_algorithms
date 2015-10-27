@@ -32,5 +32,6 @@
 ## **_Other_**
 	* Factorial
 	* Fibonacci
+		- https://en.wikipedia.org/wiki/Fibonacci_number
 	* Fibonacci Recursively
 	* Luhns
