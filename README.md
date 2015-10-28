@@ -31,6 +31,7 @@
 ============================================
 ## **_Other_**
 	* Factorial
+		- https://en.wikipedia.org/wiki/Factorial
 	* Fibonacci
 		- https://en.wikipedia.org/wiki/Fibonacci_number
 	* Fibonacci Recursively
