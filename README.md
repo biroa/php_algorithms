@@ -16,6 +16,9 @@
 		- https://www.youtube.com/watch?v=XaqR3G_NVoo
 		- https://www.youtube.com/watch?v=GCae1WNvnZM
 	* Selection Sort
+		- https://en.wikipedia.org/wiki/Selection_sort
+		- https://www.youtube.com/watch?v=f8hXR_Hvybo
+		- https://www.youtube.com/watch?v=6nDMgr0-Yyo
 	* Shell Sort
     
 ============================================
