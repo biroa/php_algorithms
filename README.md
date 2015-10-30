@@ -20,6 +20,9 @@
 		- https://www.youtube.com/watch?v=f8hXR_Hvybo
 		- https://www.youtube.com/watch?v=6nDMgr0-Yyo
 	* Shell Sort
+		- https://en.wikipedia.org/wiki/Shellsort
+		- https://www.youtube.com/watch?v=CmPA7zE8mx0
+		- https://www.youtube.com/watch?v=1yDcmjLTWOg
     
 ============================================
 ## **_Sorting Algorithms_**
